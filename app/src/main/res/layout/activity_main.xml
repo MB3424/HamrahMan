@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frm1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_Register"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:text="ثبت نام"
+                android:textColor="#2C2C2C"
+                android:textSize="17dp"
+                app:backgroundTint="#C1C1C1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Edit_Password"
+                app:layout_constraintVertical_bias="0.296" />
+
+            <EditText
+                android:id="@+id/Edit_Phone"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="شماره تلفن همراه"
+                android:inputType="phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <EditText
+                android:id="@+id/Edit_Password"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="رمز عبور"
+                android:inputType="textPersonName"
+                android:password="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Edit_Phone"
+                app:layout_constraintVertical_bias="0.077" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp"
+                app:srcCompat="@drawable/unnamed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
